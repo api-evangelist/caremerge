@@ -1,8 +1,26 @@
 aid: caremerge
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/caremerge.png
 name: CareMerge
-description: 'CareMerge is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'CareMerge is a senior living technology company that builds family engagement, care
+  coordination, community engagement, and communications software for senior living and long-term /
+  post-acute care communities. Its platform connects residents, families, and care staff so
+  communities can coordinate care, share activities and calendars, and keep families informed. The
+  company was surfaced as a portfolio company of Insight Partners and added to the API Evangelist
+  network for enrichment. As of this pass CareMerge publishes no public developer API, developer
+  portal, OpenAPI/AsyncAPI specification, or /.well-known discovery surface; its marketing site sits
+  behind a SiteGround (sg-captcha) challenge and its GitHub organization contains internal tooling
+  and open-source forks rather than a first-party client SDK.'
 url: https://raw.githubusercontent.com/api-evangelist/caremerge/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Senior Living
+- Care Coordination
+- Family Engagement
+- Long-Term Care
+- Community Engagement
+- Health Technology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/caremerge-domain-security.yml
 - type: Website
   url: http://www.caremerge.com/web/
+- type: GitHubOrganization
+  url: https://github.com/caremerge
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
